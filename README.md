@@ -1,8 +1,10 @@
-This is my Chinese version resume.
-Later I will add an English version to this repository.
-Welcome to my resume repository!
+## Welcome to my resume repository!  
+  
+Zhaomingxing-Resume.pdf is my resume written in English.  
+And the other pdf format file is my resume written in Chinese.  
 
 
-这是我的中文版个人简历,
-后面会添加英文版简历,
-欢迎查阅.
+Zhaomingxing-Resume.pdf 是我的英文版简历，  
+研发实习生-赵明星.pdf 是我的中文简历。
+  
+# 欢迎查阅，谢谢！
