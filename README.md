@@ -1,10 +1,13 @@
 ## Welcome to my resume repository!  
   
-Zhaomingxing-Resume.pdf is my resume written in English.  
-And the other pdf format file is my resume written in Chinese.  
+`ZhaoMingxing_BUPT_en.pdf` is my resume written in English while `ZhaoMingxing_BUPT_zh.pdf` is my resume written in Chinese.  
+
+#### Enjoy youself!
 
 
-Zhaomingxing-Resume.pdf 是我的英文版简历，  
-个人简历-赵明星.pdf 是我的中文简历。
-  
-# 欢迎查阅，谢谢！
+-----
+## 欢迎来到我的简历Repo！
+`ZhaoMingxing_BUPT_en.pdf`是我的英文版简历，  
+`ZhaoMingxing_BUPT_zh.pdf`是我的中文简历。
+
+#### 欢迎查阅，谢谢！
