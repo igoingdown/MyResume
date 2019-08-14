@@ -1,13 +1,33 @@
-## Welcome to my resume repository!  
+## Repo Struct 
   
-`ZhaoMingxing_BUPT_en.pdf` is my resume written in English while `ZhaoMingxing_BUPT_zh.pdf` is my resume written in Chinese.  
+* Internship\_en/
 
-#### Enjoy youself!
+	* Contains English latex source resume files used for internship application. 
 
+* Internship\_zh/
 
------
-## 欢迎来到我的简历Repo！
-`ZhaoMingxing_BUPT_en.pdf`是我的英文版简历，  
-`ZhaoMingxing_BUPT_zh.pdf`是我的中文简历。
+	* Contains Chinese latex source resume files used for internship application. 
 
-#### 欢迎查阅，谢谢！
+* Job\_en/
+
+	* Contains English latex source resume files used for job application.
+
+* Job\_zh/
+
+	* Contains Chinese latex source resume files used for job application. 
+
+* ZhaoMingxing\_BUPT\_en.pdf
+
+	* Most updated English resume. 
+
+* ZhaoMingxing\_BUPT\_zh.pdf
+
+	* Most updated Chinese resume. 
+
+## Quick Start
+To Use my latex resume source templates, 5 steps to go:
+1. clone this repo: `git clone https://github.com/igoingdown/MyResume.git`. 
+1. change to a latex source file dir, like: `cd Job_zh`. 
+1. change latex file as well as the photo file
+1. use `xelatex` to compile `main.tex`: `xelatex main.tex`
+1. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!

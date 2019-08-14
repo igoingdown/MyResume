@@ -10,7 +10,8 @@
 
 \firstname{赵明星}
 \familyname{}
-\title{Python,C++,Java}   
+\title{Golang,Python,C++,Java}   
+\mobile{(+65) 9426 0280}                       
 \mobile{(+86) 188 1086 0130}                       
 \email{zhaomingxingDL@gmail.com}    
 \homepage{igoingdown.github.io}
@@ -20,7 +21,7 @@
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
-\quote{\textbf{NLP研发工程师}} 
+\quote{\textbf{服务端研发工程师}} 
 \usepackage{multibib}
 \newcites{book,misc}{{Books},{Others}}
 
@@ -36,32 +37,29 @@
 \cvlistdoubleitem{百度\&西交大大数据竞赛优秀奖，\textbf{10/1393}}{HackPKU 2017\textbf{车道线检测赛题冠军}}
 \cvlistdoubleitem{“挑战杯”北京市大学生课外作品竞赛\textbf{二等奖}}{校级优秀研究生干部，\textbf{top 1\%}}
 
+\section{工作经历}
+\cventry{\small{2019.07-2019.08}}{Shopee@Singapore}{Platform Engineering Group}{Software Engineer}{}{
+\begin{itemize}
+\item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
+\item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离并通过ETCD实现服务发现，提高系统可用性和可扩展性。预期随RDS管理平台投入使用后，可降低DBA团队70\%工作量。
+\end{itemize}}
+
 \section{实习经历}
-\cventry{2018.05 -- 2018.07}{微软亚洲研究院} {研究实习生}{}{}
-{\begin{itemize}
+\cventry{2019.01-2019.06}{字节跳动}{UGC研发部}{后端研发实习生}{}{
+\begin{itemize}
+\item 将单个ES大索引按时间拆分为多个小索引，保留近一年的数据。查询性能提升30\%，磁盘用量降低50\%。
+\item 基于kafka和redis重构热点事件相关指标监控系统，相比基于crontab的系统，任务失败率降低20\%。
+\end{itemize}}
+
+\cventry{2018.05 -- 2018.07}{微软亚洲研究院} {研究实习生}{}{}{
+\begin{itemize}
 \item 在真实的Excel数据集上，设计并实现\textbf{SeqGAN}回收表中有可能被用于生成chart的列的组合，在recall为82.4\%时数据集中正样本数量增加65\%。
 %\item 在SeqGAN中使用基于\textbf{Monte Carlo搜索}的方法代替仅仅使用最终生成的组合与用户用于绘制chart使用的列的组合的相似度作为强化学习中的Q-function，提升了action的估值准确率。
 \item 在真实的Power BI数据集上，基于TF-IDF算法构造加权词向量特征，设计并实现\textbf{类VGG}模型预测用户可能生成的chart的类型。precision比加入RNN模型高13\%，比最好的ML模型(RF)模型高出8\%。%也实现了ResNet，但是很容易过拟合
 \end{itemize}}
 
-\cventry{2017.02 --  2017.06}{时速云}{后台研发实习生}{}{}
-{
-\begin{itemize}
-\item 使用\textbf{distributed tensorflow}实现在公有云平台上\textbf{多机多卡并行}的\textbf{Vgg模型}，收敛速度比单机版提速 \textbf{80\%}。
-\item \textbf{独立开发新版本的公有云后台管理系统的前端和后端}，在原有系统中，添加对\textbf{docker集群}状态的实时监控。使用Golang、\textbf{Beego}框架开发基于\textbf{kubernets}管理docker集群的后台服务，使用\textbf{Angular JS}进行前端开发。
-\end{itemize}}
-
 \section{项目经历}
-\cventry{2016.10 -- 2018.12}{基于深度学习的知识库问答研究}{}{}{}
-{
-\begin{itemize}
-\item 单关系问答中，使用\textbf{tensorflow}实现\textbf{seq2seq}的模型，加入\textbf{多粒度表达}模块提升特征的表示能力，加入\textbf{copy机制}动态调整源端词用于生成答案的概率，并加入\textbf{attention}，accuracy比纯seq2seq模型提升14.6\%。%继续挖掘！！！罗列工具，而不是insight。！！！钻研能力！！！！，不是学习工具。
-\item 多关系问答中，使用\textbf{pytorch}实现\textbf{强化学习}模型解决了\textbf{强监督信号缺失}的问题。使用迭代学习学到伪最佳答案，作为强化学习模型的弱监督信号，解决了强化学习启动阶段\textbf{reward稀疏}的问题，模型收敛速度提升350\%。
-%\item 使用\textbf{Spring Boot}框架实现API server，java服务直接与\textbf{virtuoso} 交互，\textbf{sparql}查询的速度比之前基于解析html的方法提升\textbf{200\%}。
-\end{itemize}}
-
-\cventry{2017.05 -- 2017.08}{“编程之美”2017挑战赛}{亚军}{}{}
-{
+\cventry{2017.05 -- 2017.08}{“编程之美”2017挑战赛}{亚军}{}{}{
 \begin{itemize}
 \item 资格赛使用pytorch实现融入\textbf{attention}和\textbf{copy机制}的seq2seq模型，\textbf{MRR > 66\%}，\textbf{排名13/1118}。
 \item 初赛使用C\#语言, 利用luis和\textbf{bot framework}设计并实现能够回答北邮相关问题的问答机器人，\textbf{排名3/200}。
