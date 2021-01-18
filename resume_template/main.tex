@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic} 
+\usepackage[utf8]{inputenc}  %Windows 
+\usepackage{ctex}
+
+%\usepackage[scale=0.975]{geometry}
+\usepackage[top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
+\usepackage{graphicx}
+
+\firstname{姓名}
+\familyname{}
+\title{专业技能：如Python,C++}   
+\mobile{(+86) 手机}                       
+\email{邮箱地址}    
+\homepage{github主页}
+\social[github]{github用户名}
+
+\photo[50pt]{photo.png}     
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\quote{\textbf{目标职位-入职时间}} 
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}                         
+\begin{document}
+\maketitle
+\section{教育经历}
+\cventry{2016--2019}{XXXX大学}{XXXX研究院, XXXX实验室}{硕士研究生}{GPA XX/XX}{}
+\cventry{2012--2016}{XXXX大学}{XXXX学院}{本科}{GPA XX/XX,\textbf{CET6: XXX}}{}
+
+\section{获奖经历}
+\cvlistdoubleitem{XXXX奖，1/XXX}{XXXX奖，1/XXX}
+\cvlistdoubleitem{XXXX奖，1/XXX}{XXXX奖，1/XXX}
+\cvlistdoubleitem{XXXX奖，1/XXX}{XXXX奖，1/XXX}
+
+\section{工作经历}
+\cventry{\small{2019.07-2019.08}}{公司名称}{团队名称}{职位名称}{}{
+\begin{itemize}
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\end{itemize}}
+
+\section{实习经历}
+\cventry{2019.01-2019.06}{公司名称}{团队名称}{职位名称}{}{
+\begin{itemize}
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\end{itemize}}
+
+\cventry{2018.05 -- 2018.07}{公司名称}{团队名称}{职位名称}{}{
+\begin{itemize}
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\end{itemize}}
+
+\section{项目经历}
+\cventry{2017.05 -- 2017.08}{项目名称}{项目荣誉}{}{}{
+\begin{itemize}
+\item 在xx问题上，使用xx模型解决了xx问题，相比xx模型，xx指标提升了xx\%。
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\end{itemize}}
+\cventry{2017.05 -- 2017.08}{项目名称}{项目荣誉}{}{}{
+\begin{itemize}
+\item 在xx问题上，使用xx模型解决了xx问题，相比xx模型，xx指标提升了xx\%。
+\item 在xx项目中，使用xx方法解决了xx问题，xx指标提升了xx\%。
+\end{itemize}}
+
+\section{科研经历}
+\cventry{2017.05 -- 2017.08}{项目名称}{项目荣誉}{}{}{
+\begin{itemize}
+\item 在xx问题上，使用xx模型解决了xx问题，相比xx模型，xx指标提升了xx\%, 在xx会议上发表论文xxx。
+\end{itemize}}
+\cventry{2017.05 -- 2017.08}{项目名称}{项目荣誉}{}{}{
+\begin{itemize}
+\item 在xx问题上，使用xx模型解决了xx问题，相比xx模型，xx指标提升了xx\%, 在xx会议上发表论文xxx。
+\end{itemize}}
+
+\end{document}
