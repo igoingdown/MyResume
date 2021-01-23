@@ -29,4 +29,4 @@ To Use my latex resume source templates, 5 steps to go:
 1. 使用WPS将word文件导出为pdf就是你自己的简历啦！
 
 ## Examples
-![template](https://github.com/igoingdown/MyResume/blob/master/images/resume_shortcut.png?raw=true)
+![template](https://github.com/igoingdown/MyResume/blob/master/images/resume_shortcut.png)
