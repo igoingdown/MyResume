@@ -19,7 +19,7 @@ To Use my latex resume source templates, 5 steps to go:
 1. open and edit latex file `main.tex` with **Texshop** app pre-installed in the 1st step.
 1. replace the picture `photo.png` by your own photo keeping the file name unchanged.
 1. in **Texshop** app, click the button bellow to compile the tex file.
-![点击排版按钮](images/button.png)
+![button](images/button.png)
 1. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!
 
 
@@ -29,4 +29,4 @@ To Use my latex resume source templates, 5 steps to go:
 1. 使用WPS将word文件导出为pdf就是你自己的简历啦！
 
 ## Examples
-![简历模板编译结果](images/resume_shortcut.png)
+![template](images/resume_shortcut.png)
