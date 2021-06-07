@@ -2,8 +2,10 @@
 
 ## Repo Struct
 ```shell
-├── images         # 图片，用于README
-│   └── resume_shortcut.png  # 简历模板截图
+├── docs
+│   └── images     # 图片，用于README
+│       ├── button.png
+│       └── resume_shortcut.png  # 简历模板截图
 └── resume_template # 中文版工作简历模板project
     ├── main.tex    # 中文版工作简历模板源码
     └── photo.png   # 中文版工作简历模板使用的个人照片
