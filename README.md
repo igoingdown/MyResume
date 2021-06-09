@@ -30,5 +30,33 @@ To Use my latex resume source templates, 5 steps to go:
 1. 使用WPS在word中修改排版字体和格式，换成自己的内容
 1. 使用WPS将word文件导出为pdf就是你自己的简历啦！
 
-## Examples
+## Example
+
+
+
 ![IMG](/docs/images/resume_shortcut.png)
+
+
+
+## Personal Info
+
+#### 微信
+
+
+
+![IMG](/docs/images/wechat.png)
+
+
+
+#### 微信公众号
+
+
+
+![IMG](/docs/images/001-minglangwanwu.png)
+
+
+
+#### 邮箱
+
+**Zhao Mingxing** - *[zhaomingxingdl@gmail.com](mailto:zhaomingxingdl@gmail.com)* 
+
