@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic} 
+\usepackage[utf8]{inputenc}  %Windows 
+\usepackage{ctex}
+
+%\usepackage[scale=0.975]{geometry}
+\usepackage[top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
+\usepackage{graphicx}
+
+\firstname{赵明星}
+\familyname{}
+\title{Golang,Python,C++}   
+\mobile{(+86) 188 1086 0130}                       
+\email{zhaomingxingDL@gmail.com}    
+\homepage{igoingdown.github.io}
+\social[github]{igoingdown}
+
+\photo[50pt]{photo.png}     
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\quote{\textbf{研发工程师}} 
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}                         
+\begin{document}
+\maketitle
+\section{教育经历}
+\cventry{2016--2019}{北京邮电大学}{网络技术研究院, 网络与交换技术国家重点实验室}{硕士研究生}{}{}
+\cventry{2012--2016}{北京邮电大学}{计算机科学与技术学院}{本科}{}{}
+
+\section{获奖经历}
+\cvlistdoubleitem{“编程之美”2017\textbf{亚军}，2/1118}{全国研究生数学建模竞赛\textbf{二等奖}}
+\cvlistdoubleitem{百度\&西交大大数据竞赛优秀奖，\textbf{10/1393}}{HackPKU 2017\textbf{车道线检测赛题冠军}}
+
+\section{工作经历}
+\cventry{\small{2019.07-2019.08}}{Shopee@Singapore}{Platform Engineering Group}{Software Engineer}{}{
+\begin{itemize}
+\item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
+\item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离并通过ETCD实现服务发现，提高系统可用性和可扩展性。预期随RDS管理平台投入使用后，可降低DBA团队70\%工作量。
+\end{itemize}}
+
+
+\cventry{\small{2019.09-今}}{\textcolor[RGB]{64,127,191}{字节跳动}}{GIP-热点}{服务端开发工程师}{}{
+\begin{itemize}
+\item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
+\item \textcolor[RGB]{64,127,191}{热榜聚类系统负责人}
+\newline 设计基于关键词的面向热榜业务的聚类算法， 彻底基于 embedding 的聚类算法的漂移问题
+\newline 实现基于关键词的聚类系统，较基于 embedding 的聚类准确度提升30\%，pct99降低90\%。
+\item \textcolor[RGB]{64,127,191}{热榜计算系统负责人}
+\newline 独立设计并实现热榜热度计算系统，事件从提报到上榜全自动，榜单自动生成与更新，极大提高了运营人效
+\newline 通过增加 cache 的方式，降低
+\item \textcolor[RGB]{64,127,191}{竞品 push 监控系统负责人}
+\newline 独立建成竞品热点监控系统，提升头条热点内容全网覆盖率25\%。
+\newline 独立建成全网竞品push监控系统，头条热点push首发率提升50\%。
+\item \textcolor[RGB]{64,127,191}{ 热点审核系统系统负责人}
+\newline 独立建成热点审核准实时数据流，产出可热率并基于可热率构建报警系统。
+\newline 独立设计并实现热点和内容的相关性判定接口，QPS 7000+。
+\item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离并通过ETCD实现服务发现，提高系统可用性和可扩展性。预期随RDS管理平台投入使用后，可降低DBA团队70\%工作量。
+\end{itemize}}
+
+
+\section{实习经历}
+\cventry{2019.01-2019.06}{字节跳动}{UGC研发部}{后端研发实习生}{}{
+\begin{itemize}
+\item 将单个ES大索引按时间拆分为多个小索引，保留近一年的数据。查询性能提升30\%，磁盘用量降低50\%。
+\item 基于kafka和redis重构热点事件相关指标监控系统，相比基于crontab的系统，任务失败率降低20\%。
+\end{itemize}}
+
+\cventry{2018.05-2018.07}{微软亚洲研究院} {研究实习生}{}{}{
+\begin{itemize}
+\item 在真实的Excel数据集上，设计并实现\textbf{SeqGAN}回收表中有可能被用于生成chart的列的组合，在recall为82.4\%时数据集中正样本数量增加65\%。
+%\item 在SeqGAN中使用基于\textbf{Monte Carlo搜索}的方法代替仅仅使用最终生成的组合与用户用于绘制chart使用的列的组合的相似度作为强化学习中的Q-function，提升了action的估值准确率。
+\item 在真实的Power BI数据集上，基于TF-IDF算法构造加权词向量特征，设计并实现\textbf{类VGG}模型预测用户可能生成的chart的类型。precision比加入RNN模型高13\%，比最好的ML模型(RF)模型高出8\%。%也实现了ResNet，但是很容易过拟合
+\end{itemize}}
+
+\section{项目经历}
+\cventry{2017.05-2017.08}{“编程之美”2017挑战赛}{亚军}{}{}{
+\begin{itemize}
+\item 资格赛使用pytorch实现融入\textbf{attention}和\textbf{copy机制}的seq2seq模型，\textbf{MRR > 66\%}，\textbf{排名13/1118}。
+\item 初赛使用C\#语言, 利用luis和\textbf{bot framework}设计并实现能够回答北邮相关问题的问答机器人，\textbf{排名3/200}。
+\item 决赛阶段为初赛设计的问答机器人添加了“找工作”、“找对象”等实用功能，\textbf{决赛排名2/8}。
+\item 在bot开发阶段，我负责\textbf{全部后台开发}，主要包括单轮和多轮对话的设计、对话状态转移、信息存储和检索等。使用python实现爬取北邮人论坛的\textbf{实时爬虫}，\textbf{基于 TF-IDF 实现搜索引擎}。
+\end{itemize}}
+
+\section{科研经历}
+\cventry{Dec. 2017}{参与实验室项目组隐私保护的关键研究}{}{}{在项目组中负责实现图和序列上的\textbf{差分隐私算法}的实现，在多个真实数据集上进行实验，在隐私约束下数据可用性达到业界领先水平并与导师合作发表论文}{X. Cheng, S. Su, S. Xu, L. Xiong, K. Xiao and \textbf{M. Zhao}. A Two-Phase Algorithm for Differentially Private Frequent Subgraph Mining. IEEE \textbf{Transactions on Knowledge \& Data Engineering}, 30(8):1411-1425, 2018}
+\end{document}

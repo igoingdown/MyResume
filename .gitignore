@@ -5,4 +5,5 @@
 *.fls
 *.out
 *.gz
+*.swp
 *tree.txt
