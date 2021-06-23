@@ -38,24 +38,25 @@
 \section{工作经历}
 \cventry{\small{2019.09-今}}{\textcolor[RGB]{64,127,191}{字节跳动}}{GIP-热点}{服务端开发工程师}{}{
 \begin{itemize}
-\item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
 \item \textcolor[RGB]{64,127,191}{热榜聚类系统负责人}
-\newline 设计基于关键词的面向热榜业务的聚类算法， 彻底基于 embedding 的聚类算法的漂移问题
+\newline 设计基于关键词的面向热榜业务的聚类算法， 彻底解决基于 embedding 的聚类算法的漂移问题
 \newline 实现基于关键词的聚类系统，较基于 embedding 的聚类准确度提升30\%，pct99降低90\%。
 \item \textcolor[RGB]{64,127,191}{热榜计算系统负责人}
-\newline 独立设计并实现热榜热度计算系统，事件从提报到上榜全自动，榜单自动生成与更新，极大提高了运营人效
-\newline 通过增加 cache 的方式，降低
+\newline 独立设计并实现热榜热度计算系统，事件从提报到上榜全自动，榜单自动生成与更新，取代了手动配置榜单。
+\newline 抽象并实现流式处理系统计算热度，多流程全并发,榜单更新频率从 10min/次 降至 1min/次。
+\newline 通过增加 cache 的方式，降低 abase IO，接口性能提升 90\%。
 \item \textcolor[RGB]{64,127,191}{竞品 push 监控系统负责人}
 \newline 独立建成竞品热点监控系统，提升头条热点内容全网覆盖率25\%。
 \newline 独立建成全网竞品push监控系统，头条热点push首发率提升50\%。
+\newline 设计并实现通用的并行和分批处理SDK供内部使用，线上代码仓库接入量20+。
 \item \textcolor[RGB]{64,127,191}{ 热点审核系统系统负责人}
-\newline 独立建成热点审核准实时数据流，产出可热率并基于可热率构建报警系统。
+\newline 独立建成热点审核准实时数据流，产出可热率并基于可热率构建报警系统，打破热点内容审核黑盒状态。
 \newline 独立设计并实现热点和内容的相关性判定接口，QPS 7000+。
 \end{itemize}}
 \cventry{\small{2019.07-2019.08}}{Shopee@Singapore}{Platform Engineering Group}{Software Engineer}{}{
 \begin{itemize}
 \item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
-\item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离并通过ETCD实现服务发现，提高系统可用性和可扩展性。预期随RDS管理平台投入使用后，可降低DBA团队70\%工作量。
+\item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离，提高系统可扩展性。投入使用后，降低DBA团队70+\%工作量。
 \end{itemize}}
 
 \section{实习经历}
@@ -68,7 +69,7 @@
 \cventry{2018.05-2018.07}{微软亚洲研究院} {研究实习生}{}{}{
 \begin{itemize}
 \item 在真实的Excel数据集上，设计并实现\textbf{SeqGAN}回收表中有可能被用于生成chart的列的组合，在recall为82.4\%时数据集中正样本数量增加65\%。
-%\item 在SeqGAN中使用基于\textbf{Monte Carlo搜索}的方法代替仅仅使用最终生成的组合与用户用于绘制chart使用的列的组合的相似度作为强化学习中的Q-function，提升了action的估值准确率。
+\item 在SeqGAN中使用基于\textbf{Monte Carlo搜索}的方法代替仅仅使用最终生成的组合与用户用于绘制chart使用的列的组合的相似度作为强化学习中的Q-function，提升了action的估值准确率。
 \item 在真实的Power BI数据集上，基于TF-IDF算法构造加权词向量特征，设计并实现\textbf{类VGG}模型预测用户可能生成的chart的类型。precision比加入RNN模型高13\%，比最好的ML模型(RF)模型高出8\%。%也实现了ResNet，但是很容易过拟合
 \end{itemize}}
 
