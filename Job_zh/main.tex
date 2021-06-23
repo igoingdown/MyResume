@@ -39,19 +39,20 @@
 \cventry{\small{2019.09-今}}{\textcolor[RGB]{64,127,191}{字节跳动}}{GIP-热点}{服务端开发工程师}{}{
 \begin{itemize}
 \item \textcolor[RGB]{64,127,191}{热榜聚类系统负责人}
-\newline 设计基于关键词的面向热榜业务的聚类算法， 彻底解决基于 embedding 的聚类算法的漂移问题
-\newline 实现基于关键词的聚类系统，较基于 embedding 的聚类准确度提升30\%，pct99降低90\%。
+    \newline 设计基于面向热榜业务的聚类算法： 设计并实现基于关键词的聚类系统，彻底解决基于k-means的聚类算法的漂移问题；较基于k-means的聚类准确度提升30\%，pct99降低90\%。
+    \newline 提升接口性能：精简存储模型，只存聚类embedding和少量tag，abase IO 降低60\%。
+    \newline 解决聚类冲突：实现冲突检测并对大cluster进行聚类豁免，pct99降至240+ms，彻底消除了冲突。
 \item \textcolor[RGB]{64,127,191}{热榜计算系统负责人}
-\newline 独立设计并实现热榜热度计算系统，事件从提报到上榜全自动，榜单自动生成与更新，取代了手动配置榜单。
-\newline 抽象并实现流式处理系统计算热度，多流程全并发,榜单更新频率从 10min/次 降至 1min/次。
-\newline 通过增加 cache 的方式，降低 abase IO，接口性能提升 90\%。
+    \newline 负责热榜2.0实时热度计算模块设计与实现，完成并持续优化热度计算模块，提升榜单内容质量。
+    \newline 提升榜单稳定性：设计并实现 snapshot 机制，榜单出问题支持锁榜，降低用户感知；针对文章计数不可回溯的问题，设计并实现极速版热榜热度计算器，作为线上服务的临时备份。 
+    \newline 提升接口性能稳定性：抽象并实现多级流式处理系统计算热度，多流程全并发，榜单更新频率从 10min/次 降至 1min/次；通过增加 cache 的方式，降低 abase IO，接口性能提升90\%
 \item \textcolor[RGB]{64,127,191}{竞品 push 监控系统负责人}
-\newline 独立建成竞品热点监控系统，提升头条热点内容全网覆盖率25\%。
-\newline 独立建成全网竞品push监控系统，头条热点push首发率提升50\%。
-\newline 设计并实现通用的并行和分批处理SDK供内部使用，线上代码仓库接入量20+。
-\item \textcolor[RGB]{64,127,191}{ 热点审核系统系统负责人}
-\newline 独立建成热点审核准实时数据流，产出可热率并基于可热率构建报警系统，打破热点内容审核黑盒状态。
-\newline 独立设计并实现热点和内容的相关性判定接口，QPS 7000+。
+    \newline 独立建成竞品热点监控系统，覆盖竞品站点，账号，和app，提升头条热点内容全网覆盖率25\%。
+    \newline 独立建成可插拔全网竞品push监控系统，监控全网热点主要竞品首发率，头条热点push首发率提升40\%。
+    \newline 设计并实现通用的并行和分批处理SDK供内部使用，线上代码仓库接入量20+。
+\item \textcolor[RGB]{64,127,191}{热点审核系统系统负责人}
+    \newline 提升热点内容审核时效：由0到1独立打通热点运营和内容审核，建设热点审核的准实时专项数据流，数据产出延迟平均小于2小时，产出审出率、可热率和延迟并基于上述数据构建报警系统。
+    \newline 独立设计并实现热点和内容的相关性判定接口，使用异步缓存支持接口QPS 8000+。
 \end{itemize}}
 \cventry{\small{2019.07-2019.08}}{Shopee@Singapore}{Platform Engineering Group}{Software Engineer}{}{
 \begin{itemize}
@@ -77,9 +78,9 @@
 \cventry{2017.05-2017.08}{“编程之美”2017挑战赛}{亚军}{}{}{
 \begin{itemize}
 \item 资格赛使用pytorch实现融入\textbf{attention}和\textbf{copy机制}的seq2seq模型，\textbf{MRR > 66\%}，\textbf{排名13/1118}。
-\item 初赛使用C\#语言, 利用luis和\textbf{bot framework}设计并实现能够回答北邮相关问题的问答机器人，\textbf{排名3/200}。
+\item 初赛使用C\#语言, 基于luis和\textbf{bot framework}设计并实现能够回答北邮相关问题的问答机器人，\textbf{排名3/200}。
 \item 决赛阶段为初赛设计的问答机器人添加了“找工作”、“找对象”等实用功能，\textbf{决赛排名2/8}。
-\item 在bot开发阶段，我负责\textbf{全部后台开发}，主要包括单轮和多轮对话的设计、对话状态转移、信息存储和检索等。使用python实现爬取北邮人论坛的\textbf{实时爬虫}，\textbf{基于 TF-IDF 实现搜索引擎}。
+\item bot开发中，我负责\textbf{全部后端开发}，主要包括单轮和多轮对话的设计、对话状态转移、信息存储和检索等。使用python实现爬取北邮人论坛的\textbf{实时爬虫}，\textbf{基于 TF-IDF 实现搜索引擎}。
 \end{itemize}}
 
 \section{科研经历}
