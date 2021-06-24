@@ -6,9 +6,11 @@
 │   └── images     # 图片，用于README
 │       ├── button.png
 │       └── resume_shortcut.png  # 简历模板截图
-└── resume_template # 中文版工作简历模板project
-    ├── main.tex    # 中文版工作简历模板源码
-    └── photo.png   # 中文版工作简历模板使用的个人照片
+├── resume_template # 中文版工作简历模板project
+│   ├── main.tex    # 中文版工作简历模板源码
+│   └── photo.png   # 中文版工作简历模板使用的个人照片
+├── zhaomingxing_resume_for_job_en # 我的英文版工作简历project
+└── zhaomingxing_resume_for_job_zh # 我的中文版工作简历project
 ```
 
 ## Quick Start
