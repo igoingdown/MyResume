@@ -7,3 +7,5 @@
 *.gz
 *.swp
 *tree.txt
+*.idea
+*.pdf
