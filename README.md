@@ -27,10 +27,26 @@ To Use my latex resume source templates, several steps to go:
 1. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!
 
 
+
+### For terminal users
+1. download and install **basic tex**: [download from here](http://www.texts.io/support/0001/).
+1. install moderncv and ctex with `tlmgr`: `sudo tlmgr update && sudo tlmgr install moderncv ctex`
+1. clone repo: `git clone https://github.com/igoingdown/MyResume.git`.
+1. go to project dir: `cd resume_template`.
+2. edit tex file `main.tex` with whatever text editor you like.
+3. replace the picture `photo.png` by your own photo with filename unchanged.
+4. run `pdflatex main.tex` to compile the tex file.
+5. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!
+
+
 ### For Windows users
 1. 使用WPS将我的简历pdf文档(`template.pdf`)转为word
 1. 使用WPS在word中修改排版字体和格式，换成自己的内容
 1. 使用WPS将word文件导出为pdf就是你自己的简历啦！
+
+
+
+
 
 ## Example
 
