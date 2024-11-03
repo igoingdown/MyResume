@@ -27,62 +27,98 @@
 \nopagenumbers{}                         
 \begin{document}
 \maketitle
+
+
 \section{教育经历}
-\cventry{2016--2019}{北京邮电大学}{网络技术研究院, 网络与交换技术国家重点实验室}{硕士研究生}{}{}
-\cventry{2012--2016}{北京邮电大学}{计算机科学与技术学院}{本科}{}{}
+\cventry{2016--2019}{北京邮电大学}{网络技术研究院, 网络与交换技术国家重点实验室}{硕士研究生}{}{校级一等奖学金}
+\cventry{2012--2016}{北京邮电大学}{计算机科学与技术学院}{本科}{}{校级三等奖学金}
+
 
 \section{获奖经历}
 \cvlistdoubleitem{“编程之美”2017\textbf{亚军}，2/1118}{全国研究生数学建模竞赛\textbf{二等奖}}
 \cvlistdoubleitem{百度\&西交大大数据竞赛优秀奖，\textbf{10/1393}}{HackPKU 2017\textbf{车道线检测赛题冠军}}
 
+
 \section{工作经历}
-\cventry{\small{2019.09-今}}{\textcolor[RGB]{64,127,191}{字节跳动}}{GIP-热点}{服务端研发工程师}{}{
-\begin{itemize}
-\item \textcolor[RGB]{64,127,191}{热榜聚类系统唯一负责人}
-    \newline  设计并实现面向热榜业务的聚类系统：设计基于\textbf{关键词}的聚类算法，彻底解决了基于k-means的聚类算法的\textbf{漂移}问题；实现完整聚类系统，较基于k-means的聚类系统准确度提升\textbf{30\%}，pct99降低\textbf{90\%}。
-    \newline 提升接口性能：精简存储模型，只存聚类embedding和少量tag，abase IO 降低\textbf{60\%}。
-    \newline 解决聚类冲突：实现冲突检测并对大cluster进行聚类豁免，pct99降至\textbf{240+ms}，彻底消除了冲突。
-\item \textcolor[RGB]{64,127,191}{热榜系统负责人}
-    \newline 负责热榜2.0实时热度计算模块设计与实现，完成并持续优化热度计算模块，提升榜单内容质量。
-    \newline 提升榜单稳定性：设计并实现\textbf{snapshot}机制，榜单出问题支持锁榜，降低用户感知；针对文章计数不可回溯的问题，设计并实现\textbf{极速版热榜热度计算器}，作为线上服务的临时备份；设计并实现db异步机制，将业务核心字段收敛到db，通过\textbf{vcp}服务统一将业务变更同步到下游。
-    \newline 提升接口性能：抽象并实现\textbf{多级流式处理系统}计算热度，多流程全并发，榜单更新频率从 10min/次 降至 1min/次；通过增加 cache 的方式，降低 abase IO，接口性能提升\textbf{90\%}。
-\item \textcolor[RGB]{64,127,191}{竞品push监控系统唯一负责人}
-    \newline 独立建成竞品热点监控系统，覆盖竞品站点，账号，和app，提升头条热点内容全网覆盖率\textbf{25\%}。
-    \newline 独立建成可插拔全网竞品push监控系统，监控全网热点主要竞品首发率，头条热点push首发率提升\textbf{40\%}。
-    \newline 设计并实现通用的并行和分批处理SDK供内部使用，线上代码仓库接入量\textbf{20+}。
-\item \textcolor[RGB]{64,127,191}{热点审核系统系统唯一负责人}
-    \newline 提升热点内容审核时效：由0到1独立打通热点运营和内容审核，建设热点审核的准实时专项数据流，数据产出延迟平均小于\textbf{2小时}，产出审出率、可热率和延迟并基于上述数据构建报警系统。
-    \newline 独立设计并实现热点和内容的相关性判定接口，使用异步缓存支持接口QPS \textbf{8000+}。
-\end{itemize}}
+\cventry{\small{2021.07-至今}}{\textcolor[RGB]{64,127,191}{字节跳动}}{电商}{服务端研发工程师}{获 spotbonus 3 次}{
+    \begin{itemize}
+        \item \textcolor[RGB]{64,127,191}{商城活动方向负责人}
+        \newline 业务玩法建设：从零到 1 建设多个业务玩法，包括签到和报销机等，推全后玩法在商城新入口 GMV 渗透 \textbf{7\%}
+        \newline 存量玩法效率探索：红包雨玩法发券引入算法模型，实现成本控制，GMV 转化率高于运营配置，玩法 GMV\_ROI 长期显著 > \textbf{1}
+        \newline 玩法商业化建设：建立红包雨玩法商业化机制，单月收入 > 1000w ，实现玩法收支平衡
+        \newline 技术基础设施建设：多玩法共通依赖现金发放能力，抽象活动钱包系统并落地，支撑 3+ 个玩法活动上线；对于玩法通用能力进行梳理，建设组件 SDK ，目前已沉淀 feed、任务列表等通用能力
+        \newline 业务效率提升：规划并落地玩法后台，目前已支持 3 个玩法配置，配置成本显著降低，玩法配置 0 RD 投入。多玩法上线过程中，沉淀全过程 SOP 文档 \textbf{10+}，显著提升开发、测试与 oncall 效率
+        \newline 稳定性建设：在多玩法落地过程中，为每个玩法分别梳理并落地稳定性方案，\textbf{5+} 玩法集中上线 \textbf{0} Fatal；梳理稳定性方案模板，模板使用 UV \textbf{10+}
+        \item \textcolor[RGB]{64,127,191}{电商大促研发负责人}
+        \newline 作为电商大促横向 RD POC 统筹活动全流程各团队 RD 工作，与 PM、QA、业务 POC 紧密合作推动大促活动落地
+        \newline 大促全链路效率提升：推进全链路接入时间穿梭能力，测试&玩法预演效率提升 \textbf{1倍+}
+        \item \textcolor[RGB]{64,127,191}{营销中台稳定性建设}
+        \newline 压测模型校准：分析历史压测链路，定位压测缓存穿透率低问题，建设通用压测缓存穿透 sdk，缓存穿透率\textbf{0.1\%\->50\%}，压测精度提升
+        \newline 强弱依赖梳理：完成 C 端导购链路梳理，\textbf{40\%}。
+        \newline 黑名单稳定性重保：业务针对权益资损问题建设黑名单 sdk，导购和交易链路均强依赖，梳理 sdk 逻辑，从 panic 预防、监控报警建设、性能测试、降级预案维度进行保障，上线后稳定承接流量\textbf{1000w+}QPS 。
+        \newline 稳定性工具建设：建设营销中台稳定性监控大盘，帮助业务发现&定位问题；开发稳定性工具脚本仓库，支持按服务树节点拉取全量faas 脚本及触发器配置、全量 psm 报警配置，实现消费限速巡检报警 review 提效。
+    \end{itemize}}
+
+\cventry{\small{2019.09-2021.07}}{\textcolor[RGB]{64,127,191}{字节跳动}}{今日头条}{服务端研发工程师}{获 spotbonus 1 次}{
+    \begin{itemize}
+        \item \textcolor[RGB]{64,127,191}{热榜聚类系统负责人}
+        \newline  设计并实现面向热榜业务的聚类系统：设计基于\textbf{关键词}的聚类算法，彻底解决了基于k-means的聚类算法的\textbf{漂移}问题；实现完整聚类系统，较基于k-means的聚类系统准确度提升\textbf{30\%}，pct99降低\textbf{90\%}。
+        \newline 提升接口性能：精简存储模型，只存聚类embedding和少量tag，abase IO 降低\textbf{60\%}。
+        \newline 解决聚类冲突：实现冲突检测并对大cluster进行聚类豁免，pct99降至\textbf{240+ms}，彻底消除了冲突。
+        \newline 梳理缓存能力并总结文档：项目过程中使用了多种缓存（本地缓存、redis 缓存），调研通用缓存框架并总结适用场景，沉淀文档，组织内阅读 uv 2000+
+        \item \textcolor[RGB]{64,127,191}{热榜系统负责人}
+        \newline 负责热榜2.0实时热度计算模块设计与实现，完成并持续优化热度计算模块，提升榜单内容质量。
+        \newline 提升榜单稳定性：设计并实现\textbf{snapshot}机制，榜单出问题支持锁榜，降低用户感知；针对文章计数不可回溯的问题，设计并实现\textbf{极速版热榜热度计算器}，作为线上服务的临时备份；设计并实现db异步机制，将业务核心字段收敛到db，通过\textbf{vcp}服务统一将业务变更同步到下游。
+        \newline 提升接口性能：抽象并实现\textbf{多级流式处理系统}计算热度，多流程全并发，榜单更新频率从 10min/次 降至 1min/次；通过增加 cache 的方式，降低 abase IO，接口性能提升\textbf{90\%}。
+        \item \textcolor[RGB]{64,127,191}{竞品push监控系统负责人}
+        \newline 独立建成竞品热点监控系统，覆盖竞品站点，账号，和app，提升头条热点内容全网覆盖率\textbf{25\%}。
+        \newline 独立建成可插拔全网竞品push监控系统，监控全网热点主要竞品首发率，头条热点push首发率提升\textbf{40\%}。
+        \newline 设计并实现通用的并行和分批处理SDK供内部使用，线上代码仓库接入量\textbf{20+}。
+        \item \textcolor[RGB]{64,127,191}{热点审核系统系统负责人}
+        \newline 提升热点内容审核时效：由0到1独立打通热点运营和内容审核，建设热点审核的准实时专项数据流，数据产出延迟平均小于\textbf{2小时}，产出审出率、可热率和延迟并基于上述数据构建报警系统。
+        \newline 独立设计并实现热点和内容的相关性判定接口，使用异步缓存支持接口QPS \textbf{8000+}。
+    \end{itemize}}
+
+\cventry{\small{2019.01-至今}}{字节跳动}{}{服务端研发工程师-内推达人}{}{
+    \begin{itemize}
+        \item 基于爬虫实现自动跟帖功能，在各论坛收集简历完成内推，累计内推 UV \textbf{1854} 人，入职 \textbf{23} 人
+        \item 开发公众号实现自动回复能力，总结简历常见问题并给予建议， 免费帮助 \textbf{60+}+ 同学拿到 offer
+    \end{itemize}}
+
 \cventry{\small{2019.07-2019.08}}{Shopee@Singapore}{Platform Engineering Group}{Software Engineer}{}{
-\begin{itemize}
-\item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
-\item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离，提高系统可扩展性。投入使用后，降低DBA团队\textbf{70+\%}工作量。
-\end{itemize}}
+    \begin{itemize}
+        \item 设计并实现RDS管理平台。通过创建RDS时自动添加透明Slave节点降低故障恢复时间。
+        \item 设计并实现RDS备份系统。将task生成器，调度器和执行器分离，提高系统可扩展性。投入使用后，降低DBA团队\textbf{70+\%}工作量。
+    \end{itemize}}
+
 
 \section{实习经历}
-\cventry{2019.01-2019.06}{字节跳动}{GIP-热点}{服务端研发实习生}{}{
-\begin{itemize}
-\item 将单个ES大索引按时间拆分为多个小索引，保留近一年的数据。查询性能提升\textbf{30\%}，磁盘用量降低\textbf{50\%}。
-\item 基于kafka和redis重构热点事件相关指标监控系统，相比基于crontab的系统，任务失败率降低\textbf{20\%}。
-\end{itemize}}
+\cventry{2019.01-2019.06}{字节跳动}{今日头条}{服务端研发实习生}{}{
+    \begin{itemize}
+        \item 将单个ES大索引按时间拆分为多个小索引，保留近一年的数据。查询性能提升\textbf{30\%}，磁盘用量降低\textbf{50\%}。
+        \item 基于kafka和redis重构热点事件相关指标监控系统，相比基于crontab的系统，任务失败率降低\textbf{20\%}。
+    \end{itemize}}
 
 \cventry{2018.05-2018.07}{微软亚洲研究院} {研究实习生}{}{}{
-\begin{itemize}
-\item 在真实的Excel数据集上，设计并实现\textbf{SeqGAN}回收表中有可能被用于生成chart的列的组合，在recall为82.4\%时数据集中正样本数量增加65\%。
-\item 在SeqGAN中使用基于\textbf{Monte Carlo搜索}的方法代替仅仅使用最终生成的组合与用户用于绘制chart使用的列的组合的相似度作为强化学习中的Q-function，提升了action的估值准确率。
-\item 在真实的Power BI数据集上，基于TF-IDF算法构造加权词向量特征，设计并实现\textbf{类VGG}模型预测用户可能生成的chart的类型。precision比加入RNN模型高13\%，比最好的ML模型(RF)模型高出8\%。%也实现了ResNet，但是很容易过拟合
-\end{itemize}}
+    \begin{itemize}
+        \item 在真实的Excel数据集上，设计并实现\textbf{SeqGAN}回收表中有可能被用于生成chart的列的组合，在recall为82.4\%时数据集中正样本数量增加65\%。
+        \item 在SeqGAN中使用基于\textbf{Monte Carlo搜索}的方法代替仅仅使用最终生成的组合与用户用于绘制chart使用的列的组合的相似度作为强化学习中的Q-function，提升了action的估值准确率。
+        \item 在真实的Power BI数据集上，基于TF-IDF算法构造加权词向量特征，设计并实现\textbf{类VGG}模型预测用户可能生成的chart的类型。precision比加入RNN模型高13\%，比最好的ML模型(RF)模型高出8\%。%也实现了ResNet，但是很容易过拟合
+    \end{itemize}}
+
 
 \section{项目经历}
 \cventry{2017.05-2017.08}{“编程之美”2017挑战赛}{亚军}{}{}{
-\begin{itemize}
-\item 资格赛使用pytorch实现融入\textbf{attention}和\textbf{copy机制}的seq2seq模型，\textbf{MRR > 66\%}，\textbf{排名13/1118}。
-\item 初赛使用C\#语言, 基于luis和\textbf{bot framework}设计并实现能够回答北邮相关问题的问答机器人，\textbf{排名3/200}。
-\item 决赛阶段为初赛设计的问答机器人添加了“找工作”、“找对象”等实用功能，\textbf{决赛排名2/8}。
-\item bot开发中，我负责\textbf{全部后端开发}，主要包括单轮和多轮对话的设计、对话状态转移、信息存储和检索等。使用python实现爬取北邮人论坛的\textbf{实时爬虫}，\textbf{基于 TF-IDF 实现搜索引擎}。
-\end{itemize}}
+    \begin{itemize}
+        \item 资格赛使用pytorch实现融入\textbf{attention}和\textbf{copy机制}的seq2seq模型，\textbf{MRR > 66\%}，\textbf{排名13/1118}。
+        \item 初赛使用C\#语言, 基于luis和\textbf{bot framework}设计并实现能够回答北邮相关问题的问答机器人，\textbf{排名3/200}。
+        \item 决赛阶段为初赛设计的问答机器人添加了“找工作”、“找对象”等实用功能，\textbf{决赛排名2/8}。
+        \item bot开发中，我负责\textbf{全部后端开发}，主要包括单轮和多轮对话的设计、对话状态转移、信息存储和检索等。使用python实现爬取北邮人论坛的\textbf{实时爬虫}，\textbf{基于 TF-IDF 实现搜索引擎}。
+    \end{itemize}}
+
 
 \section{科研经历}
 \cventry{Dec. 2017}{参与实验室项目组隐私保护的关键研究}{}{}{在项目组中负责实现图和序列上的\textbf{差分隐私算法}的实现，在多个真实数据集上进行实验，在隐私约束下数据可用性达到业界领先水平并与导师合作发表论文}{X. Cheng, S. Su, S. Xu, L. Xiong, K. Xiao and \textbf{M. Zhao}. A Two-Phase Algorithm for Differentially Private Frequent Subgraph Mining. IEEE \textbf{Transactions on Knowledge \& Data Engineering}, 30(8):1411-1425, 2018}
 \end{document}
+
+

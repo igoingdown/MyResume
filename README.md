@@ -15,13 +15,13 @@
 
 ## Quick Start
 ### For Mac users
-To Use my latex resume source templates, 5 steps to go:
-1. download and install basic mactex: [download from here](http://www.texts.io/support/0001/). 
-1. config **TexShop** App as [configuration instruction](https://www.jianshu.com/p/7bbd54a89ac2).
-1. clone this repo: `git clone https://github.com/igoingdown/MyResume.git`. 
+To Use my latex resume source templates, several steps to go:
+1. download and install mactex: [download from here](http://www.texts.io/support/0001/). 
+1. config **TexShop** App as [configuration instruction](https://liam.page/2014/11/02/latex-mactex-chinese-support/).
+1. clone repo: `git clone https://github.com/igoingdown/MyResume.git`. 
 1. go to project dir: `cd resume_template`. 
-1. open and edit latex file `main.tex` with **Texshop** app pre-installed in the 1st step.
-1. replace the picture `photo.png` by your own photo keeping the file name unchanged.
+1. open and edit latex file `main.tex` with **Texshop** app pre-installed.
+1. replace the picture `photo.png` by your own photo with filename unchanged.
 1. in **Texshop** app, click the button bellow to compile the tex file.
 ![IMG](/docs/images/button.png)
 1. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!
