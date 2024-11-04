@@ -30,7 +30,7 @@ To Use my latex resume source templates, several steps to go:
 
 ### For terminal users
 1. download and install **basic tex**: [download from here](http://www.texts.io/support/0001/).
-1. install moderncv and ctex with `tlmgr`: `sudo tlmgr update && sudo tlmgr install moderncv ctex`
+1. install moderncv and ctex with `tlmgr`: `sudo tlmgr update && sudo tlmgr install moderncv ctex multibib` 
 1. clone repo: `git clone https://github.com/igoingdown/MyResume.git`.
 1. go to project dir: `cd resume_template`.
 2. edit tex file `main.tex` with whatever text editor you like.
