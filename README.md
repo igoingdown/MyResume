@@ -13,38 +13,53 @@
 └── zhaomingxing_resume_for_job_zh # 我的中文版工作简历project
 ```
 
-## Quick Start
-### For Mac users
-To Use my latex resume source templates, several steps to go:
-1. download and install mactex: [download from here](http://www.texts.io/support/0001/). 
-1. config **TexShop** App as [configuration instruction](https://liam.page/2014/11/02/latex-mactex-chinese-support/).
-1. clone repo: `git clone https://github.com/igoingdown/MyResume.git`. 
-1. go to project dir: `cd resume_template`. 
-1. open and edit latex file `main.tex` with **Texshop** app pre-installed.
-1. replace the picture `photo.png` by your own photo with filename unchanged.
-1. in **Texshop** app, click the button bellow to compile the tex file.
-![IMG](/docs/images/button.png)
-1. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!
+## For Mac(terminal) users
+
+*以下流程通过 AI 生成，prompt 为：我在 GitHub 上找到了一个 LaTeX 项目，希望clone 到本地并编译生成 pdf 文件，如何操作，我的计算机是 mac 系统，新电脑，没有配置过开发环境，答案写到一个 markdown 文件中*
+
+* 安装 Homebrew（包管理器）打开终端（Terminal），粘贴以下命令并回车，按提示输入密码，完成安装。
+
+```
+/bin/bash -c "\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+* 安装 Git（用于克隆项目）在终端中执行：
+
+```
+brew install git
+```
+
+* 安装 LaTeX 编译环境，推荐安装 MacTeX（完整套件）：
+
+
+```
+brew install --cask mactex
+```
+
+
+*  克隆本项目
+
+```
+git clone https://github.com/用户名/项目名.git  # 替换为实际复制的链接
+```
+
+* 进入项目文件夹：
 
 
 
-### For terminal users
-1. download and install **basic tex**: [download from here](http://www.texts.io/support/0001/).
-1. install moderncv and ctex with `tlmgr`: `sudo tlmgr update && sudo tlmgr install moderncv ctex multibib` 
-1. clone repo: `git clone https://github.com/igoingdown/MyResume.git`.
-1. go to project dir: `cd resume_template`.
-2. edit tex file `main.tex` with whatever text editor you like.
-3. replace the picture `photo.png` by your own photo with filename unchanged.
-4. run `pdflatex main.tex` to compile the tex file.
-5. if no bugs in latex source file, you will get a resume named `main.pdf`. Congratulations!
+```
+cd $HOME/github/MyResume/zhaomingxing_resume_for_job_zh
 
+```
 
-### For Windows users
-1. 使用WPS将我的简历pdf文档(`template.pdf`)转为word
-1. 使用WPS在word中修改排版字体和格式，换成自己的内容
-1. 使用WPS将word文件导出为pdf就是你自己的简历啦！
+* 替换个人信息
 
+编辑 `main.tex` 并替换照片 `photo.png`
 
+* 编译
+
+```
+xelatex main.tex
+```
 
 
 
