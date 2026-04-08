@@ -7,12 +7,12 @@
 
 ### AI 探索条目
 
-- [ ] **AI-01**: 在商城营销活动方向负责人板块最上方新增 AI 探索子项
-- [ ] **AI-02**: 描述职责一：创建 AI Skill，实现框架分支代码自动生成
-- [ ] **AI-03**: 描述职责二：自动化操作内部平台，取代手动操作
-- [ ] **AI-04**: 描述职责三：降低平台操作门槛，提升研发效率
-- [ ] **AI-05**: 包含量化数据：AI Skill 累计下载 10736 次
-- [ ] **AI-06**: 使用现有 LaTeX 格式风格（\item、\textcolor、\textbf 等）
+- [x] **AI-01**: 在商城营销活动方向负责人板块最上方新增 AI 探索子项
+- [x] **AI-02**: 描述职责一：创建 AI Skill，实现框架分支代码自动生成
+- [x] **AI-03**: 描述职责二：自动化操作内部平台，取代手动操作
+- [x] **AI-04**: 描述职责三：降低平台操作门槛，提升研发效率
+- [x] **AI-05**: 包含量化数据：AI Skill 累计下载 10736 次
+- [x] **AI-06**: 使用现有 LaTeX 格式风格（\item、\textcolor、\textbf 等）
 
 ## v2 Requirements
 
@@ -30,12 +30,12 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AI-01 | Phase 1 | Pending |
-| AI-02 | Phase 1 | Pending |
-| AI-03 | Phase 1 | Pending |
-| AI-04 | Phase 1 | Pending |
-| AI-05 | Phase 1 | Pending |
-| AI-06 | Phase 1 | Pending |
+| AI-01 | Phase 1 | Complete |
+| AI-02 | Phase 1 | Complete |
+| AI-03 | Phase 1 | Complete |
+| AI-04 | Phase 1 | Complete |
+| AI-05 | Phase 1 | Complete |
+| AI-06 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 6 total

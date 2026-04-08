@@ -10,7 +10,7 @@ See: .planning/PROJECT.md (updated 2026-04-08)
 ## Status
 
 **Current Phase:** Phase 1 — 新增 AI 探索条目
-**Phase Status:** Pending
+**Phase Status:** Complete
 **Requirements:** 6 total, all mapped to Phase 1
 
 ## Artifacts
