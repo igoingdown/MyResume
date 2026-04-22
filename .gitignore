@@ -9,3 +9,5 @@
 *tree.txt
 *.idea
 *.pdf
+*.claude/
+*.planning/

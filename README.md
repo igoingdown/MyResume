@@ -4,6 +4,7 @@
 
 - 想复用模板：看 `resume_template/`
 - 想查看我本人简历：看 `zhaomingxing_resume_for_job_zh/`（中文）和 `zhaomingxing_resume_for_job_en/`（英文）
+- 想查看面试准备资料：看 `interview_doc/`
 
 ## 目录结构
 
@@ -11,6 +12,7 @@
 .
 ├── docs/
 │   └── images/                     # README 使用的图片
+├── interview_doc/              # 面试准备文档（项目方案、FAQ）
 ├── resume_template/                # 可复用：中文简历模板
 │   ├── main.tex
 │   └── photo.png
